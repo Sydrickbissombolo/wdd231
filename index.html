@@ -3,9 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 231</title>
+    <title>WDD 231 - Web Frontend Development - Newton</title>
+    <meta name="description" content="Web Frontend Development I - Home Page">
+    <meta name="author" content="Newton Bissombolo">
+    <link rel="stylesheet" href="./styles/base.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="./scripts/getdates.js" defer></script>
 </head>
 <body>
-    <h1>WDD 231 - Newton</h1>
+    <header>
+        <img src="./images/newt.png" alt="Profile Picture" class="profile">
+        <h1>S. Newton Bissombolo</h1>
+        
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Chamber</a></li>
+                <li><a href="https://github.com/dashboard">Github Profile</a></li>
+                <li><a href="https://www.linkedin.com/in/newton-bissombolo-215623244/">LinkedIn</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Course Work</h2>
+            <ul>
+                <li>...</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Brazzaville, Rep. of the Congo</h2>
+            <img src="./images/green.jpeg" alt="Green fields">
+            <p>Green Fiels</p>
+        </section>
+        <section>
+            <h2>Web and Computer Programming Certificate</h2>
+            <div class="filter-button">
+                <button onclick="filterCourses('all')">All</button>
+                <button onclick="filterCourses('CSE')">CSE</button>
+                <button onclick="filterCourses('WDD')">WDD</button>
+            </div>
+            <div id="courses"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> S. Newton Bissombolo @ Rep. of the Congo</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 </html>

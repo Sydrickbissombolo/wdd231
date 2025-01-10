@@ -1,0 +1,88 @@
+/* General styles */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f0f8ff;
+}
+
+/* Header styles */
+header {
+    background-color: #2a4d69;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+header .profile {
+    width: 100px;
+    border-radius: 50%;
+}
+
+header h1 {
+    margin: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+nav a.active {
+    text-decoration: underline;
+}
+
+/* Main styles */
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+section img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.filter-button {
+    margin-bottom: 15px;
+}
+
+.filter-button button {
+    margin-right: 10px;
+    padding: 10px 15px;
+    background-color: #2a4d69;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.filter-button button:hover {
+    background-color: #41729f;
+}
+
+/* Footer styles */
+footer {
+    background-color: #2a4d69;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+}
