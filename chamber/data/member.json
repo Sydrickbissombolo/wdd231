@@ -4,7 +4,7 @@
         "address": "123 Main St, City, Country",
         "phone": "(123) 456-7890",
         "website": "http://companyone.com",
-        "image": "company-one.jpg",
+        "image": "comp_1.jpg",
         "membership_level": 1
     },
     {
@@ -12,7 +12,7 @@
         "address": "456 Elm St, City, Country",
         "phone": "(987) 654-3210",
         "website": "http://companytwo.com",
-        "image": "company-two.jpg",
+        "image": "comp_2.jpg",
         "membership_level": 2
     },
     {
@@ -20,7 +20,7 @@
         "address": "789 Oak St, City, Country",
         "phone": "(555) 123-4567",
         "website": "http://companythree.com",
-        "image": "company-three.jpg",
+        "image": "comp_3.jpg",
         "membership_level": 3
     },
     {
@@ -28,7 +28,7 @@
         "address": "101 Pine St, City, Country",
         "phone": "(666) 234-5678",
         "website": "http://companyfour.com",
-        "image": "company-four.jpg",
+        "image": "comp_4.jpg",
         "membership_level": 1
     },
     {
@@ -36,7 +36,7 @@
         "address": "202 Maple St, City, Country",
         "phone": "(777) 345-6789",
         "website": "http://companyfive.com",
-        "image": "company-five.jpg",
+        "image": "comp_5.jpg",
         "membership_level": 2
     },
     {
@@ -44,7 +44,7 @@
         "address": "303 Birch St, City, Country",
         "phone": "(888) 456-7890",
         "website": "http://companysix.com",
-        "image": "company-six.jpg",
+        "image": "comp_6.jpg",
         "membership_level": 3
     },
     {
@@ -52,7 +52,7 @@
         "address": "404 Cedar St, City, Country",
         "phone": "(999) 567-8901",
         "website": "http://companyseven.com",
-        "image": "company-seven.jpg",
+        "image": "comp_7.jpg",
         "membership_level": 1
     }
 ]
