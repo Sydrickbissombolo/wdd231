@@ -1,0 +1,58 @@
+[
+    {
+        "name": "Company One",
+        "address": "123 Main St, City, Country",
+        "phone": "(123) 456-7890",
+        "website": "http://companyone.com",
+        "image": "company-one.jpg",
+        "membership_level": 1
+    },
+    {
+        "name": "Company Two",
+        "address": "456 Elm St, City, Country",
+        "phone": "(987) 654-3210",
+        "website": "http://companytwo.com",
+        "image": "company-two.jpg",
+        "membership_level": 2
+    },
+    {
+        "name": "Company Three",
+        "address": "789 Oak St, City, Country",
+        "phone": "(555) 123-4567",
+        "website": "http://companythree.com",
+        "image": "company-three.jpg",
+        "membership_level": 3
+    },
+    {
+        "name": "Company Four",
+        "address": "101 Pine St, City, Country",
+        "phone": "(666) 234-5678",
+        "website": "http://companyfour.com",
+        "image": "company-four.jpg",
+        "membership_level": 1
+    },
+    {
+        "name": "Company Five",
+        "address": "202 Maple St, City, Country",
+        "phone": "(777) 345-6789",
+        "website": "http://companyfive.com",
+        "image": "company-five.jpg",
+        "membership_level": 2
+    },
+    {
+        "name": "Company Six",
+        "address": "303 Birch St, City, Country",
+        "phone": "(888) 456-7890",
+        "website": "http://companysix.com",
+        "image": "company-six.jpg",
+        "membership_level": 3
+    },
+    {
+        "name": "Company Seven",
+        "address": "404 Cedar St, City, Country",
+        "phone": "(999) 567-8901",
+        "website": "http://companyseven.com",
+        "image": "company-seven.jpg",
+        "membership_level": 1
+    }
+]

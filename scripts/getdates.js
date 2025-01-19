@@ -21,6 +21,8 @@ const coursesContainer = document.getElementById('courses');
 
 function displayCourses(filter = 'all') {
     coursesContainer.innerHTML = '';
+    let totalCredits = 0;
+
     const filteredCourses = courses.filter(course =>
         filter === 'all' || course.code.startsWith(filter)
     );
@@ -32,7 +34,10 @@ function displayCourses(filter = 'all') {
         courseDiv.style.marginBottom = '10px';
         courseDiv.style.borderRadius = '5px'
         coursesContainer.appendChild(courseDiv);
+        totalCredits += course.credits;
     });
+
+    totalCreditsElement.textContent = totalCredits;
 }
 
 // Initial Display of the function
@@ -43,3 +48,11 @@ displayCourses();
 function filterCourses(filter) {
     displayCourses(filter);
 }
+
+// Hamburger menu
+const hamburger = document.querySelector('.hamburger');
+const navMenu = document.querySelector('.nav-menu');
+
+hamburger.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+});

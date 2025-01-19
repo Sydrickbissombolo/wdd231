@@ -1,0 +1,79 @@
+/* Normalize CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+#toggle-view {
+    margin: 20px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#members-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.member-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+}
+
+.member-card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.list-view .member-card {
+    width: 100%;
+}
+
+.grid-view .member-card {
+    width: 30%;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #333;
+    color: white;
+}
+
+footer p {
+    margin: 10px 0;
+}

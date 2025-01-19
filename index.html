@@ -14,12 +14,17 @@
 </head>
 <body>
     <header>
-        <img src="./images/newt.png" alt="Profile Picture" class="profile">
+        <img src="./images/newt.jpg" alt="Profile Picture" class="profile">
         <h1>WDD 231 - Web Frontend Development I - Newton Bissombolo</h1>
+        <button class="hamburger" aria-label="Toggle Navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
         
         <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
+            <ul class="nav-menu">
+                <li><a href="#" class="active">Home</a></li>
                 <li><a href="#">Chamber</a></li>
                 <li><a href="https://github.com/dashboard">Github Profile</a></li>
                 <li><a href="https://www.linkedin.com/in/newton-bissombolo-215623244/">LinkedIn</a></li>
@@ -31,7 +36,9 @@
         <section>
             <h2>Course Work</h2>
             <ul>
-                <li>...</li>
+                <li>Complete assignments promptly</li>
+                <li>Adhere to coding standards</li>
+                <li>Use accessibility practices</li>
             </ul>
         </section>
         <section>
@@ -47,6 +54,7 @@
                 <button onclick="filterCourses('WDD')">WDD</button>
             </div>
             <div id="courses"></div>
+            <p>Total Credits: <span id="totalCredits">0</span></p>
         </section>
     </main>
 
