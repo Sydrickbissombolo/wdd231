@@ -1,0 +1,29 @@
+[
+    {
+        "name": "Tech Innovators Inc.",
+        "tagline": "Innovating Your World",
+        "email": "info@techinnovators.com",
+        "phone": "800-123-4567",
+        "website": "https://www.techinnovators.com",
+        "image": "com_1.jpg",
+        "membership": 3
+    },
+    {
+        "name": "Green Energy Co.",
+        "tagline": "Powering a Sustainable Future",
+        "email": "contact@greenenergy.com",
+        "phone": "800-987-6543",
+        "website": "https://www.greenenergy.com",
+        "image": "com_2.jpg",
+        "membership": 2
+    },
+    {
+        "name": "Urban Eatery",
+        "tagline": "Delicious Food, Delivered Fresh",
+        "email": "info@urbaneatery.com",
+        "phone": "800-555-1212",
+        "website": "https://www.urbaneatery.com",
+        "image": "com_3.jpg",
+        "membership": 1
+    }
+]
