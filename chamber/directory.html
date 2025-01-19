@@ -3,80 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Dolisie Chamber of Commerce Directory Page">
-    <meta name="author" content="Larbi Seth">
-    <meta property="og:title" content="Dolisie Chamber of Commerce">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="path-to-your-image.jpg">
-    <meta property="og:url" content="https://your-github-username.github.io/wdd231/chamber/directory.html">
-    <title>Dolisie Chamber of Commerce</title>
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./styles/directory.css">
-    <script src="./scripts/directory.js" defer></script>
+    <title>WDD 231 - Course Home Page - Newton Bissombolo</title>
+    <meta name="description" content="Home page for WDD 231 - Web Frontend Development I Chamber of Commerce project.">
+    <meta name="author" content="Sydrick Newton Bissombolo">
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <script src="./scripts/getdates.js" defer></script>
 </head>
 <body>
     <header>
-        <div class="logo">
-            <img src="images/cham_logo.png" alt="Dolisie Chamber of Commerce Logo">
-            <h1>Dolisie Chamber of Commerce</h1>
-            <button class="hamburger" id="hamburger-btn">&#9776;</button>
-        </div>
+        <img src="./images/newt.jpg" alt="Profile Picture" class="profile">
+        <h1>WDD 231 - Course Home Page - Newton Bissombolo</h1>
+        <button class="hamburger" aria-label="Toggle Navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        
         <nav>
-            <ul id="nav-menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="directory.html">Directory</a></li>
-                <li><a href="#">Join</a></li>
-                <li><a href="#">Discover</a></li>
+            <ul class="nav-menu">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Chamber</a></li>
+                <li><a href="https://github.com/dashboard">Github Profile</a></li>
+                <li><a href="https://www.linkedin.com/in/newton-bissombolo-215623244/">LinkedIn</a></li>
             </ul>
         </nav>
-        <button id="theme-toggle">🔄</button>
     </header>
 
     <main>
-        <section class="hero">
-            <h2>Welcome to Dolisie Chamber of Commerce</h2>
-            <button class="keynote-button">Keynote Tickets</button>
+        <section>
+            <h2>Course Work</h2>
+            <ul>
+                <li>Complete assignments promptly</li>
+                <li>Adhere to coding standards</li>
+                <li>Use accessibility practices</li>
+            </ul>
         </section>
-
-        <section class="info">
-            <div class="events">
-                <h3>Events</h3>
-                <p>Upcoming events information will be displayed here.</p>
+        <section>
+            <h2>Brazzaville, Rep. of the Congo</h2>
+            <img src="./images/green.jpeg" alt="Green fields">
+            <p>Green Fiels</p>
+        </section>
+        <section>
+            <h2>Web and Computer Programming Certificate</h2>
+            <div class="filter-button">
+                <button onclick="filterCourses('all')">All</button>
+                <button onclick="filterCourses('CSE')">CSE</button>
+                <button onclick="filterCourses('WDD')">WDD</button>
             </div>
-            <section class="weather">
-                <div class="current-weather">
-                    <h3>Current Weather</h3>
-                    <p id="temperature">Temperature: --</p>
-                    <p id="condition">Condition: --</p>
-                    <p id="humidity">Humidity: --</p>
-                </div>
-            </section>
-            
-            <section class="forecast">
-                <h3>Weather Forecast</h3>
-                <div id="forecast-container">
-                    <!-- Dynamic forecast cards will go here -->
-                </div>
-            </section>
-
-            <section id="business-directory">
-                <h3>Business Directory</h3>
-                <div id="business-cards-container">
-                    <!-- Business cards will be populated here -->
-                </div>
-            </section>
-            
+            <div id="courses"></div>
+            <p>Total Credits: <span id="totalCredits">0</span></p>
+        </section>
     </main>
 
     <footer>
-        <p>Dolisie Chamber of Commerce<br>152 Mayer street, Mont Fleury<br>Dolisie, Congo 242<br>Email: <a href="newtonbissombolo2@gmail.com">newtonbissombolo2@gmail.com</a><br>Phone: (242) 068-069-842</p>
-        <p>&copy; <span id="year"></span> Dolisie Chamber of Commerce</p>
-        <p>WDD 231 Chamber of Commerce Project | Newton Bissombolo<br>Last Modification: <span id="last-modified"></span></p>
-        <div class="social-links">
-            <a href="#"><img src="images/youtube.png" alt="YouTube"></a>
-            <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
-            <a href="#"><img src="images/linkedin.png" alt="LinkedIn"></a>
-        </div>
+        <p>&copy; <span id="year"></span> S. Newton Bissombolo @ Rep. of the Congo</p>
+        <p id="lastModified"></p>
     </footer>
+
+    
 </body>
 </html>
