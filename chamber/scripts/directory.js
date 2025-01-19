@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     // Fetch the JSON file
-    const membersUrl = './data/members.json';  // Path to your JSON file
+    const membersUrl = './chamber/data/members.json';  // Path to your JSON file
 
     async function fetchMembers() {
         try {
@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 // Populate the card with member details
                 card.innerHTML = `
-                    <img src="./images/${member.image}" alt="${member.name} logo">
+                    <img src="./chamber/images/${member.image}" alt="${member.name} logo">
                     <h4>${member.name}</h4>
                     <p>${member.tagline}</p>
                     <p><strong>Email:</strong> <a href="mailto:${member.email}">${member.email}</a></p>
