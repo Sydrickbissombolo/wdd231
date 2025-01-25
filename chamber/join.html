@@ -46,16 +46,47 @@
             </ul>
         </nav>
     </header>
-    <!-- //NAVBAR -->
 
-    <main>
-        <div id="viewToggle">
-            <button id="grid-view">⏹️Grid</button>
-            <button id="list-view">📄List</button>
+    <div class="container-1">
+        <form action="thankyou.html" method="get" id="membershipForm">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required>
+
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required>
+
+            <label for="firstName">Title or Position:</label>
+            <input type="text" id="title" name="title" required>
+
+            <label for="firstName">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="newtonb@example.com">
+
+            <label for="firstName">Mobile Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="firstName">Organization Name:</label>
+            <input type="text" id="organization" name="organization" required>
+
+            <label for="firstName">Membership Level:</label>
+            <select name="membershipLevel" id="membershipLevel">
+                <option value="NP">NP Membership</option>
+                <option value="Bronze">Bronze Membership</option>
+                <option value="Silver">Silver Membership</option>
+                <option value="Gold">Gold Membership</option>
+            </select>
+
+            <label for="description">Organization Description:</label>
+            <textarea name="description" id="description"></textarea>
+
+            <input type="hidden" id="formTimestamp" name="FormTimestamp">
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <div class="membership-benefits">
+
         </div>
-        <div id="member-container"></div>
-    </main>
-
+    </div>
 
     <footer class="footer-1">
         <p id="lastModified"><span>Last modification: </span></p>

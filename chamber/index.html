@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Bissombolo Sydrick Newton">
-    <meta name="description" content="WDD 230 - Web Frontend Development">
+    <meta name="description" content="WDD 231 - Web Frontend Development">
     <meta property="og:title" content="Web developer">
     <meta property="og:type" content="Portofolio">
     <meta property="og:image" content="https://media.licdn.com/dms/image/D4D03AQHsrcWG1vJwRQ/profile-displayphoto-shrink_400_400/0/1673903445790?e=1701907200&v=beta&t=VHxSxo5DmJJbJ_tBW5o9sXNK48BuTDliWSyojybDtV8">
@@ -14,9 +14,9 @@
     <link rel="stylesheet" href="./styles/base.css">
     <link rel="stylesheet" href="./styles/larger.css">
     <link rel="stylesheet" href="./styles/medium.css">
-    <link rel="stylesheet" href="./favicon.ico">
+    <!-- <link rel="icon" href="./favicon.ico"> -->
     <link rel="stylesheet" href="./styles/darkmode.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha384-rwoIYYx3ct6+5eT4jOXUnlL3riF63t0xFrRwCtFmgmwiGg/hpDBweMS6c4Y6LlM2" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha384-rwoIYYx3ct6+5eT4jOXUnlL3riF63t0xFrRwCtFmgmwiGg/hpDBweMS6c4Y6LlM2" crossorigin="anonymous"> -->
 </head>
 <body>
     <header>
@@ -25,19 +25,16 @@
             <img src="./images/logo.webp" alt="My logo">
             <!-- Text beside the logo -->
             <span>Dolisie<br>The Chamber of Commerce</span>
+            <button id="menuToggle" class="hamburger-menu">
+                ☰
+              </button>
         </div>
         <div class="social-icon">
             <img src="./images/facebook.png" alt="Facebook Icon">
             <img src="./images/twitter.png" alt="Twitter Icon">
         </div>
-        <!-- Hamburger menu -->
-        <div class="hamburger-menu">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-        </div>
         
-        <nav class="mobile-nav">
+        <nav id="navMenu" class="nav-menu">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="discover.html">Discover</a></li>
@@ -46,17 +43,42 @@
             </ul>
         </nav>
     </header>
-    <!-- //NAVBAR -->
 
+    <!-- MAIN -->
     <main>
-        <div id="viewToggle">
-            <button id="grid-view">⏹️Grid</button>
-            <button id="list-view">📄List</button>
-        </div>
-        <div id="member-container"></div>
-    </main>
-
-
+        <!-- Hero Section -->
+        <section class="hero">
+          <img src="./images/landscape.webp" alt="Welcome to the Chamber of Commerce">
+          <h1>Welcome to [City Name] Chamber of Commerce</h1>
+          <p>Connecting businesses and supporting the community.</p>
+          <a href="join.html" class="cta-button">Join the Chamber</a>
+        </section>
+    
+        <!-- Current Events Section -->
+        <section class="current-events">
+          <h2>Current Events</h2>
+          <ul>
+            <li>Annual Business Expo - March 25th</li>
+            <li>Networking Night - April 10th</li>
+            <li>Workshop: Growing Your Business - April 20th</li>
+          </ul>
+        </section>
+    
+        <!-- Weather Section -->
+        <section class="weather">
+          <h2>Local Weather</h2>
+          <div id="weather-info">
+            <p>Loading weather data...</p>
+          </div>
+        </section>
+    
+        <!-- Spotlight Section -->
+        <section id="spotlights">
+            <h2>Spotlight Members</h2>
+            <div id="spotlight-container"></div>
+          </section>
+      </main>
+    
     <footer class="footer-1">
         <p id="lastModified"><span>Last modification: </span></p>
         <div class="footer-right">
@@ -70,7 +92,7 @@
             <!-- Address information -->
             <p>42 Mfilou Street, Dolisie</p>
             <!-- Copyright and person's name -->
-            <p class="modification-date"></p>
+            <p id="lastModified"></p>
             <p>&copy; 2023 Chamber of Commerce. All rights reserved. | sydrick Newton | Wdd 230 Project</p>
         </div>
     </footer>
